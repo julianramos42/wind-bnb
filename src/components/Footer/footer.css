@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+footer>p{
+    color: rgb(130, 130, 130);
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.anchor{
+    text-decoration: underline;
+    color: rgb(130, 130, 130);
+    font-weight: bold;
+}

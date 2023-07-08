@@ -1,11 +1,19 @@
 import React from 'react'
-import Card from '../../components/card/Card'
+import './home.css'
+import Card from '../../components/Card/Card'
+import data from '../../data.json'
 
 export default function Home() {
 
-  return (
-    <div>
-      <Card/>
-    </div>
-  )
+    return (
+        <main className='mainContainer'>
+            <div className='placesContainer'>
+                {
+                    data.map((place, i) => {
+                        return <Card place={place} key={i} />
+                    })
+                }
+            </div>
+        </main>
+    )
 }

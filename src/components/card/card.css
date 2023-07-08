@@ -1,0 +1,79 @@
+.cardContainer{
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: .4s;
+}
+
+.cardContainer:hover{
+    transform: scale(1.1);
+}
+
+.placeImg {
+    width: 395px;
+    height: 269px;
+    border-radius: 24px;
+}
+
+.placeText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.placeInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 27px;
+}
+
+.placeInfo>div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.placeInfo .superHost{
+    border: 1px solid black;
+    border-radius: 12px;
+    color: rgb(79, 79, 79);
+    font-weight: 700;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 14.63px;
+    transition: .4s;
+}
+
+.placeInfo .superHost:hover{
+    background-color: rgb(235, 87, 87);
+    border-color: rgb(235, 87, 87);
+    color: #efefef;
+    cursor: default;
+}
+
+.placeInfo .placeType{
+    font-size: 14px;
+    line-height: 17.07px;
+    color: rgb(130, 130, 130);
+    font-weight: 500;
+}
+
+.placeInfo .placeRating{
+    color: rgb(79, 79, 79);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.star{
+    color:rgb(235, 87, 87)
+}
+
+.placeTitle{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: rgb(51,51,51);
+}

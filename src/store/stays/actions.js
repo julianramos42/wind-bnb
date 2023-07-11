@@ -2,10 +2,11 @@ import { createAction } from "@reduxjs/toolkit";
 
 let allStays = createAction(
     'allStays',
-    ({stays}) => {
+    ({stays, filter}) => {
         return {
             payload: {
                 stays: stays,
+                filter: filter,
             }
         }
     }

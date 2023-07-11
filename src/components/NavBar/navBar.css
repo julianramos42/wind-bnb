@@ -92,7 +92,7 @@ nav input {
 }
 
 .show{
-    display: block;
+    display: flex;
 }
 
 .staysContainer>div{

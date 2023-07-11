@@ -16,12 +16,17 @@ export default function Header() {
     dispatch(renderNav({state:true}))
   }
 
+  let stays = useSelector(store => store.staysReducer.stays)
+  let staysFilter = useSelector(store => store.staysReducer.filter)
+
   return (
     <header>
       {
         navRender ? <NavBar/> : <><img src={logo} alt='logo'/>
         <div className='search' onClick={openNav}>
-            <input type='text' name='location' placeholder='Add Location'/>
+            {
+              staysFilter ? <input type='text' name='location' placeholder='Add Location' value={stays[0].city}/> : <input type='text' name='location' placeholder='Add Location'/>
+            }
             <input type='text' name='guests' placeholder='Add Guests'/>
             <i className="fa-solid fa-magnifying-glass loupe"></i>
         </div></>

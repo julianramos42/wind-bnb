@@ -6,6 +6,7 @@ const { allStays } = staysActions
 
 const initialState = {
     stays: data,
+    filter: false
 }
 
 const staysReducer = createReducer(
@@ -16,7 +17,8 @@ const staysReducer = createReducer(
             (state,action) => {
                 let newState = {
                     ...state,
-                    stays: action.payload.stays
+                    stays: action.payload.stays,
+                    filter: action.payload.filter
                 }
                 return newState
             }

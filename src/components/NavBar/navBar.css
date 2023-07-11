@@ -1,0 +1,120 @@
+.navBarContainer {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.column {
+    width: 1px;
+    height: 60px;
+    background-color: rgb(242, 242, 242);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 45vh;
+    padding: 3% 17.5%;
+    gap: 30px;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer>p {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+nav input {
+    width: 550px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    padding: 20px 15px 5px 15px;
+}
+
+.btnSelected {
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.btnSearch {
+    background-color: rgb(235, 87, 87);
+    color: white;
+    border-radius: 16px;
+    height: 60px;
+    width: 150px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btnSearch:hover {
+    width: 200px;
+    padding-right: 100px;
+}
+
+.btnSearch i {
+    color: white;
+}
+
+.staysContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 180px;
+    width: 550px;
+    overflow-y: auto;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.staysContainer>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.staysContainer>div:hover{
+    background-color: rgba(79, 79, 79, 0.1);
+}
+
+.staysContainer h3{
+    color: rgb(79, 79, 79);
+    font-size: 14px;
+    line-height: 17.57px;
+    font-weight: 400;
+}
+
+.staysContainer i{
+    color: rgb(79, 79, 79);
+}

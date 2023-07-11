@@ -5,6 +5,12 @@
     padding: 1% 0 5% 0; 
 }
 
+.filterInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
 .placesContainer{
     display: flex;
     flex-wrap: wrap;

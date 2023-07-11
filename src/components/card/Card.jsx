@@ -13,7 +13,7 @@ export default function Card({ place }) {
             }
             <p className='placeType'>{place.type}</p>
           </div>
-          <p className='placeRating'><i class="fa-solid fa-star star"></i> {place.rating}</p>
+          <p className='placeRating'><i className="fa-solid fa-star star"></i> {place.rating}</p>
         </div>
         <h3 className='placeTitle'>{place.title}</h3>
       </div>

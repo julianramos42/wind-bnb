@@ -13,7 +13,7 @@ export default function Home() {
                 {
                     staysFilter ? <h3>Stays in {stays[0].city}, Finland</h3> : <h3>Stays in Finland</h3>
                 }
-                <p>12+ stays</p>
+                <p>{stays.length} stays</p>
             </div>
             <div className='placesContainer'>
                 {

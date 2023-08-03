@@ -21,7 +21,8 @@ export default function Header() {
 
   let stays = useSelector(store => store.staysReducer.stays)
   let staysFilter = useSelector(store => store.staysReducer.filter)
-  console.log(staysFilter)
+  let guests = useSelector(store => store.staysReducer.guests)
+  let location = useSelector(store => store.staysReducer.city)
 
   function clearFilters() {
     dispatch(allStays({ stays: data, filter: false }))
@@ -34,9 +35,11 @@ export default function Header() {
           <div className='buttons-containers'>
             <div className='search' onClick={openNav}>
               {
-                staysFilter ? <input type='text' name='location' placeholder='Add Location' value={stays[0].city} /> : <input type='text' name='location' placeholder='Add Location' value='' />
+                staysFilter && location ? <input type='text' name='location' placeholder='Add Location' value={stays[0]?.city} /> : <input type='text' name='location' placeholder='Add Location' value='' />
               }
-              <input type='text' name='guests' placeholder='Add Guests' />
+              {
+                staysFilter && guests>0 ? <input type='text' name='guests' placeholder='Add Guests' value={guests+' Guests'} /> : <input type='text' name='guests' placeholder='Add Guests' value=''/>
+              }
               <i className="fa-solid fa-magnifying-glass loupe"></i>
             </div>
             {

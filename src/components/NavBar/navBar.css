@@ -28,7 +28,7 @@ nav {
     background-color: white;
     width: 100%;
     height: 45vh;
-    padding: 3% 17.5%;
+    padding: 3% 5%;
     gap: 30px;
 }
 
@@ -81,7 +81,7 @@ nav input {
     color: white;
 }
 
-.staysContainer{
+.staysContainer {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -91,11 +91,7 @@ nav input {
     display: none;
 }
 
-.show{
-    display: flex;
-}
-
-.staysContainer>div{
+.staysContainer>div {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -104,17 +100,47 @@ nav input {
     transition: .4s;
 }
 
-.staysContainer>div:hover{
+.staysContainer>div:hover {
     background-color: rgba(79, 79, 79, 0.1);
 }
 
-.staysContainer h3{
+.staysContainer h3 {
     color: rgb(79, 79, 79);
     font-size: 14px;
     line-height: 17.57px;
     font-weight: 400;
 }
 
-.staysContainer i{
+.staysContainer i {
     color: rgb(79, 79, 79);
+}
+
+.guestsContainer {
+    margin-left: 550px;
+    padding: 0px 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guests-btn{
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.guests-btn button{
+    background-color: white;
+    border: 1px solid rgba(130, 130, 130, 1);
+    border-radius: 4px;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show {
+    display: flex;
 }

@@ -6,7 +6,9 @@ const { allStays } = staysActions
 
 const initialState = {
     stays: data,
-    filter: false
+    filter: false,
+    guests: 1,
+    city: ''
 }
 
 const staysReducer = createReducer(
@@ -18,7 +20,9 @@ const staysReducer = createReducer(
                 let newState = {
                     ...state,
                     stays: action.payload.stays,
-                    filter: action.payload.filter
+                    filter: action.payload.filter,
+                    guests:action.payload.guests,
+                    city: action.payload.city
                 }
                 return newState
             }

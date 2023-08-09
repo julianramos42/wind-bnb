@@ -1,7 +1,7 @@
 import React from 'react'
-import './card.css'
+import './itemCard.css'
 
-export default function Card({ place }) {
+export default function ItemCard({ place }) {
   return (
     <div className='cardContainer'>
       <img src={place.photo} alt={place.title} className='placeImg' />

@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import Card from '../../components/Card/Card'
+import Card from '../../components/ItemCard/ItemCard'
 import { useSelector } from 'react-redux'
 
 export default function Home() {
